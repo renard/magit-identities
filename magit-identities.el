@@ -5,7 +5,7 @@
 ;; Author: Sébastien Gross <seb•ɑƬ•chezwam•ɖɵʈ•org>
 ;; Keywords: emacs, 
 ;; Created: 2012-08-30
-;; Last changed: 2020-07-09 23:43:53
+;; Last changed: 2020-07-10 00:09:41
 ;; Licence: WTFPL, grab your copy here: http://sam.zoy.org/wtfpl/
 
 ;; This file is NOT part of GNU Emacs.
@@ -82,7 +82,8 @@ Order matters: first matched identity is used."
     (apply #'magit-identities-set-id
 	   (cddr (assoc (intern id) magit-identities-alist))))
 
-(define-key magit-mode-map (kbd "C-c C-p") 'magit-identities-change)
+;; ;;;###autoload
+;; (define-key magit-mode-map (kbd "C-c C-p") 'magit-identities-change)
 
 
 ;; ;;;###autoload
